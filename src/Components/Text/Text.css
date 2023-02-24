@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.text{
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.primary{
+color:#E15341;
+transform: translateY(-500px);
+}
+
+.secondary{
+color: #C1B4B4;
+transform: translateY(-600px);
+
+}
+
+.lg{
+    font-size: 8rem;
+}
+
+.md{
+    font-size: 6rem;
+}
+
+@keyframes transformAnim {
+    0%{
+        transform: translateY(-300px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}

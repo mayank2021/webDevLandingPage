@@ -1,0 +1,170 @@
+.app-container{
+ /* padding: 20px; */
+ overflow: hidden;
+}
+body{
+  background-color: #1E1F23;
+
+}
+
+.text-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.idea-text-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bulb-gif img{
+  width: 50px;
+  height: 50px;
+}
+
+.bulb-gif{
+background-color: #E15341;
+width: 60px;
+height: 60px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: translateX(-500px);
+
+}
+
+.landing-page--container{
+  padding: 10px 30px;
+}
+
+.transforming-main-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transforming-main-container img{
+  width: 80px;
+  height: 80px;
+  transform: translateX(300px);
+}
+
+.tagline-container{
+  background-color: #C1B4B4;
+  flex-direction: column;
+  border-radius: 20px 0 20px 0;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.tagline-container img {
+  width: 40px;
+}
+
+.tagline-container p {
+  font-family: 'Lilita One', cursive;
+  margin: 0;
+  font-weight: 500;
+  color: #E15341;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.tagline-container-1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #C1B4B4;
+  padding: 10px;
+  width: 160px;
+  border-radius: 100px 0 0 100px;
+  margin: 20px 0;
+ transform: translateX(300px);
+
+  /* animation: rightIn 2s; */
+}
+
+.tagline-container-1 img{
+  width: 50px;
+}
+
+.tagline-container-1 p {
+  font-family: 'Lilita One', cursive;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #E15341;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+@keyframes rightIn {
+  0%{
+ transform: translate(300px);
+  }
+  50%{
+    transform: translate(-20px);
+
+  }
+  100%{
+    transform: translate(0px);
+
+  }
+  
+}
+
+@keyframes learnAnim {
+  0%{
+ transform: translateX(300px);
+  }
+  50%{
+    transform: translateX(-20px);
+
+  }
+  100%{
+    transform: translateX(0px);
+
+  }
+  
+}
+
+@keyframes tranformIcon {
+  0%{
+    transform: translateX(300px);
+     }
+     50%{
+       transform: translateX(-20px);
+   
+     }
+     100%{
+       transform: translateX(0px);
+   
+     }
+}
+
+
+@keyframes bulbAnim {
+  0%{
+    transform: translateX(-500px) rotate(360deg);
+     }
+     50%{
+       transform: translateX(20px) rotate(-90deg);
+   
+     }
+     100%{
+       transform: translateX(0px) rotate(0deg);
+   
+     }
+}

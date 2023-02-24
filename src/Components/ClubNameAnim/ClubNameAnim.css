@@ -1,0 +1,60 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+Mono+One';
+.class-name-anim--container {
+  background: #1E1F23;
+  /* backdrop-filter: blur(10px); */
+  overflow-x: hidden;
+  font-family: 'Rubik Mono One', sans-serif;
+  padding: 15px;
+  text-align: center;
+  transform: translateY(800px);
+
+  /* border: 2px solid red; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.words {
+  color: #1E1F23;
+  font-size: 0;
+  line-height: 1;
+}
+.words span {
+  font-size: 6rem;
+  display: inline-block;
+  animation: move 4s ease-in-out infinite;
+}
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+@keyframes move {
+  0% {
+    transform: translate(-33%, 0);
+  }
+  50% {
+    text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    color: rgba(193, 180, 180, 0.3)  ;
+  }
+  100% {
+    transform: translate(33%, 0);
+  }
+}
+
+@keyframes clubName {
+  0%{
+    transform: translateY(800px);
+}
+50%{
+    transform: translateY(-20px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+/* * {
+  box-sizing: border-box;
+} */
+
